@@ -9,6 +9,13 @@ import { initReactI18next } from 'react-i18next';
 import en from '@/locales/en.json';
 import cn from '@/locales/cn.json';
 // import { useTranslation } from "react-i18next";
+// const { t, i18n } = useTranslation();
+
+// const navigate = useNavigate()
+// // 语言
+// const changeLanguages: MenuProps['onClick'] = ({ key }) => {
+//     i18n.changeLanguage(key);
+// }
 i18n
   .use(initReactI18next)
   .init({

@@ -7,7 +7,6 @@ export const getRequest = async <T>(
 ): Promise<MyResponseType<T>> => {
   try {
     const { data } = await $axios.get(url, { params });
-    console.log("data", data);
     return data;
   } catch (e: any) {
     return {
@@ -25,7 +24,6 @@ export const postRequest = async <T>(
 ): Promise<MyResponseType<T>> => {
   try {
     const { data } = await $axios.post(url, params);
-    console.log("data", data);
     return data;
   } catch (e: any) {
     return {

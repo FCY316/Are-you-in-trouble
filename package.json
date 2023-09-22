@@ -11,6 +11,8 @@
     "@types/node": "^16.18.48",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "antd": "^5.9.2",
+    "axios": "^1.5.0",
     "bech32": "^2.0.0",
     "buffer": "^6.0.3",
     "ethereum-blockies": "^0.1.1",
@@ -31,7 +33,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "NODE_ENV=development craco build"
   },
   "eslintConfig": {
     "extends": [

@@ -55,7 +55,7 @@ const useConnectedWallet = (props = initialState) => {
         if (initialState.walletName) {
             connected()
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return { ...wallet, connected, breaks }
 }

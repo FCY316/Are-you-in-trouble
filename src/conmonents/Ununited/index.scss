@@ -1,0 +1,25 @@
+.banner {
+  height: 120px;
+  border-radius: 12px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+.text {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  font-size: 12px;
+  word-wrap: break-word; /* 自动折行，允许单词内部换行 */
+  overflow-wrap: break-word; /* 按照字母进行折行 */
+}
+@media screen and (min-width: 780px) {
+  .banner {
+    height: 400px;
+  }
+  .text{
+    font-size: 16px;
+  }
+}

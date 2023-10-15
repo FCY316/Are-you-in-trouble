@@ -1,6 +1,7 @@
 import { ethers } from "ethers";
 import { Buffer } from "buffer";
 import blockies from "ethereum-blockies";
+import { message } from "antd";
 var fibo = require("bech32");
 
 // 将BigNumber 转换为普通数(数字类型)
@@ -177,4 +178,34 @@ export const ethereumAddressImage = (address: string) => {
   const imageDataURL = circularCanvas.toDataURL("image/png");
 
   return imageDataURL; // 返回生成的圆形图片地址
+};
+// 复制
+export const handleCopyClick = (data: string | number) => {
+  try {
+    data = data + "";
+    const textField = document.createElement("textarea");
+    textField.innerText = data;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("copy");
+    textField.remove();
+    message.success("复制成功");
+  } catch (e) {
+    message.error("复制失败");
+  }
+};
+// 检测是不是fb或者0x地址
+export const isValidAddress = (inputString: string) => {
+  // 匹配以 "fb" 开头的 41 位字符串，其中包含数字和英文
+  const regex1 = /^fb[0-9a-zA-Z]{39}$/;
+
+  // 匹配以 "0x" 开头的 42 位字符串，其中包含数字和英文
+  const regex2 = /^0x[0-9a-zA-Z]{40}$/;
+
+  // 使用正则表达式测试输入字符串
+  if (regex1.test(inputString) || regex2.test(inputString)) {
+    return true; // 字符串符合要求
+  } else {
+    return false; // 字符串不符合要求
+  }
 };

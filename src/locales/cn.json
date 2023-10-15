@@ -1,3 +1,30 @@
 {
-    
+    "header": {
+        "connectedWallet": "连接钱包",
+        "exitWallet": "退出钱包",
+        "maintain":"维持",
+        "creation":"创建",
+        "heres":"继承者"
+    },
+    "home": {
+        "text":"是一个专门设计用于在意外紧急情况下保护您数字资产的解决方案。无论是自然灾害、丢失了对主要钱包的访问权限，还是其他意外情况，我们的应急钱包确保您随时都有备用计划来访问和管理您的加密货币。",
+        "connectedWallet": "连接钱包",
+        "beQuering": "查询中",
+        "follow": "关注",
+        "authorization":"授权",
+        "get": "领取",
+        "collectionAddress": "收款地址",
+        "pleaseEnter0xOrfbAddress": "请输入ox或者fb地址",
+        "notice": "注意事项",
+        "followDiscord": "关注Discord领取测试币",
+        "eachAddress": "每个地址24小时只可领取一次！",
+        "pleaseEnterTheCorrectAddress": "请输入正确的地址",
+        "receiveSuccessfully": "领取成功",
+        "affirm":"确认",
+        "joiningDiscord":"请刷新,用于验证您是否加入discord",
+        "refresh":"页面刷新",
+        "24hours":"已经领取过了，请24小时之后再来"
+
+
+    }
 }

@@ -1,3 +1,29 @@
 {
-    
+    "header": {
+        "connectedWallet": "Connected wallet",
+        "exitWallet": "Exit wallet",
+        "maintain":"Maintain",
+        "creation":"Creation",
+        "heres":"heres"
+    },
+    "home": {
+        "text":"It is specially designed for use in unexpected emergency situations Solutions to protect your digital assets. Whether it's natural disasters, Lost access to your main wallet, or something unexpected, Our emergency wallet ensures you always have a backup plan to access and Manage your cryptocurrencies.",
+        "connectedWallet": "Connected wallet",
+        "beQuering":"Be quering",
+        "follow": "Follow",
+        "authorization":"Authorization",
+        "get":"Get",
+        "collectionAddress":"Collection address",
+        "pleaseEnter0xOrfbAddress":"Please enter 0x or fb address",
+        "notice":"Notice",
+        "followDiscord":"Follow Discord get test coin ",
+        "eachAddress":"Each address can only be picked up once in 24 hours",
+        "pleaseEnterTheCorrectAddress":"Please enter the correct address",
+        "receiveSuccessfully":"Receive successfully",
+        "affirm":"Affirm",
+        "joiningDiscord":"Please refresh to verify that you are joining discord",
+        "refresh":"Refresh",
+        "24hours":"It's already been picked up. Please come back in 24 hours"
+
+    }
 }

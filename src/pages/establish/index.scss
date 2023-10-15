@@ -1,0 +1,13 @@
+.establish{
+    box-sizing: border-box;
+    padding: 21px 17px 0;
+    &-token{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #fff;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+}

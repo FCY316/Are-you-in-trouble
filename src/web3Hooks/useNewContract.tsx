@@ -7,10 +7,10 @@ type objKeyObjectType = {
     [key: string]: object;
 }
 type walletType = {
-    erc20: Contract | null
+    Factory:Contract | null,
 }
 const initialState: walletType = {
-    erc20: null
+    Factory:null
 }
 // new出合约，
 const useNewContract = (props = initialState) => {
@@ -20,7 +20,7 @@ const useNewContract = (props = initialState) => {
     const { signer } = CounterContainer.useContainer();
     // 当signer有后new出合约
     useEffect(() => {
-        if (signer && false) {
+        if (signer) {
             let obj: objKeyObjectType = {}
             // 遍历出合约
             Object.keys(contract).forEach((key) => {

@@ -43,7 +43,7 @@ const useGetInfo = (addresss: string) => {
         const claimApproveERC20 =async () => {
           steDate({...data,loadih:true})
         try{
-          const {hash} =  await AreYouInTroublec.claimApproveERC20(inheritanceERC20List,  inheritanceERC20)
+          const {hash} =  await AreYouInTroublec.claimApprovedERC20(inheritanceERC20List,  inheritanceERC20)
           const relset = await listenerTransferF(hash)
           if (relset) {
             message.success('继承成功')

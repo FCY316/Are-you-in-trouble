@@ -22,7 +22,7 @@ const Creation = () => {
         创建
       </Button>
       <div className="creation-list">
-        {true ? (
+        {data.length ? (
           <>
             {data.map((item: any, inedx: any) => {
               return (

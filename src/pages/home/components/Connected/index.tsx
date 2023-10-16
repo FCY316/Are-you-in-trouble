@@ -13,7 +13,7 @@ const Connected = () => {
     <>
       <Ununited />
       <div className="connected">
-        {true ? (
+        {getMaintainerList?.length ? (
           <div>
             {getMaintainerList?.map((item, index) => {
               return <div key={index} className="connected-item">

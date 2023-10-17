@@ -37,7 +37,7 @@ const Dasd = (props:{address:string}) => {
   const {address} = props  
   const { addressj,
     inheritanceERC20List,
-    inheritanceERC20,claimApproveERC20} =useGetInfo(address)
+    inheritanceERC20,claimApproveERC20,lod} =useGetInfo(address)
   const  {symbol} = useTokenInfo(inheritanceERC20List || '')  
   return (
     <>
@@ -59,7 +59,7 @@ const Dasd = (props:{address:string}) => {
           点击查看
         </Popover>
       </div>
-      <Button onClick={claimApproveERC20} className="heres-list-body-item-btn">继承</Button>
+      <Button disabled={!!!inheritanceERC20} loading={lod} onClick={claimApproveERC20} className="heres-list-body-item-btn">继承</Button>
     </>
   );
 };
